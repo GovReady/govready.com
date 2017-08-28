@@ -41,7 +41,11 @@
                 font-weight: bold;
                 text-align: center;
             }
-            .cta { margin: 5px 0 30px 0; }
+            .cta { margin: 5px 0 30px 0;text-align: left; }
+
+            .img-responsive { margin: 40px 0px 0px 0px; border: none; }
+            .img-responsive-small { height:42px; width:216px; margin: auto; border: none; }
+
             #team { font-size: 16px; }
             #team .row { margin-bottom: 1em; }
             #team h2 { margin: 1em 0; }
@@ -65,169 +69,63 @@
     <!--[if gt IE 7]><!-->
 
 
-    <div class="container">
-      <div style="margin: 1em auto; max-width: 800px;">
+    <div class="container" style="width:900px;">
+      <div style="margin: 1em auto; max-width: 800px; text-align:center;">
         <h1 class="sr-only">GovReady</h1>
-        <img src="img/govready_logo.png" class="img-responsive" alt="GovReady PBC Logo">
+        <a href="/"><img src="img/govready_logo.png" class="img-responsive" alt="GovReady PBC Logo" style="height:80px; margin:auto;"></a>
       </div>
 
-      <p id="deck">Deliver cyber security compliance as fast as you ship code.</p>
+      <!-- <p id="deck">Deliver cyber security compliance as fast as you ship code.</p> -->
+      <p id="deck">Automating the crap out of compliance</p>
 
-      <p id="deck2">NIST RMF &middot; FISMA &middot; OpenControl &middot; DevSecOps &middot; Agile</p>
+      <p id="deck2">Open Source &middot; Compliance-as-Code &middot; OpenControl &middot; DevSecOps </p>
 
-      <div style="max-width: 700px; margin: 2em auto;">
-        <p>GovReady PBC develops productivity tools at the intersection of information technology compliance and agile methodology.</p>
+        <div class="row" style="border:0px solid blue;">
+          <div class="col-md-4" style="text-align:center;">
+            <img src="img/developer.png" style="height:400px;">
+            <p>
+              Dammit Jim,<br />
+              I'm a developer,<br />
+              not a FISMA expert.
+            </p>
+          </div>
 
-        <div style="width: 310px; margin: auto;">
-        <a href="/videos/demo" style="display: block; margin-top: 30px;">
-          <img class="img-responsive" src="/videos/demo/thumbnail.png" alt="Watch a Demo Video">
-        </a>
-        <p class="cta">
-          <span class="glyphicon glyphicon-play"></span>
-          <a href="/videos/demo">Watch a demo video &raquo;</a>
-        </p>
+          <div class="col-md-2" style="">&nbsp;</div>
+
+          <div class="col-md-6" style="text-align:left;">
+            <a href="videos/demo/index.html" xxx="display: block; margin: 40px 0px 0px 0px; border:1px solid red;">
+            <img class="img-responsive" src="videos/demo/thumbnail.png" alt="Watch a Demo Video">
+            </a>
+
+            <p class="cta">
+              <span class="glyphicon glyphicon-play"></span>
+              <a href="videos/demo">Watch a Demo Video &raquo;</a>
+            </p>
+
+
+            <!--p class="cta">
+              <span class="glyphicon glyphicon-star"></span>
+              <a href="https://q.govready.com">Sign up and try GovReady-Q yourself! &raquo;</a>
+            </p-->
+
+            <p class="cta">
+              <span class="glyphicon glyphicon-star"></span>
+              <a href="talks/sccs2017/index.html">Slides from DHS 2017 Cyber Security Showcase &raquo;</a>
+            </p>
+
+            <p class="cta">
+              <span class="glyphicon glyphicon-star"></span>
+              <a href="http://eepurl.com/cN7oJL">Join Mailing List &raquo;</a>
+            </p>
+
+            <p class="cta">
+              <span class="glyphicon glyphicon-calendar"></span>
+              <a href="events/webinars/index.html">Learn with a GovReady Webinar &raquo;</a>
+            </p>
+
         </div>
 
-        <p class="cta">
-          <span class="glyphicon glyphicon-star"></span>
-          <a href="https://q.govready.com">Sign up and try GovReady-Q yourself! &raquo;</a>
-        </p>
-
-        <p class="cta">
-        	<span class="glyphicon glyphicon-star"></span>
-        	<a href="http://eepurl.com/cN7oJL">Request a preview to see the future of compliance &raquo;</a>
-        </p>
-
-        <p class="cta">
-          <span class="glyphicon glyphicon-calendar"></span>
-          Join a GovReady webinar to learn more about...
-        </p>
-
-        <table class="table">
-          <style scoped>
-            @media screen and (min-width: 769px) {
-              .date { white-space: nowrap; }
-            }
-            a { white-space: nowrap; }
-            td div { font-weight: bold; }
-          </style>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Topic</th>
-              <th>Register</th>
-            </tr>
-          </thead>
-          <tbody>
-
-            <tr>
-              <td class="date">Friday 8/18/17 11:00 AM EST</td>
-              <td>
-                <div>Introduction to Open Control and Compliance Masonry</div>
-                This webinar will introduce OpenControl, a data format for describing control implementation descriptions as re-usable, structured data. The first 20 minutes will demostrate OpenControl's and Compliance Masonry approach to automating cyber security compliance. The remaining 40 minutes will be a more technical walk through of creating Open Control content.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/d8c2c4e46829a2007510d14dfea9e911">Register &raquo;</a></td>
-            </tr>
-            <tr>
-              <td class="date">Friday 8/25/17 11:00 AM EST</td>
-              <td>
-                <div>Automating Cyber Security Compliance 101</div>
-                A general introduction to automating cyber security compliance and Compliance as Code. Explanation of how Compliance as Code works and demonstrations of OpenControl, GovReady, and other technologies. 
-              </td>
-              <td><a href="https://zoom.us/meeting/register/bc0b9bdf9553fec4cde7dc3c8da9331e">Register &raquo;</a></td>
-            </tr>
-
-            <tr>
-              <td class="date">Friday 9/8/17 11:00 AM EST</td>
-              <td>
-                <div>Building a GovReady Compliance App</div>
-                Learn how to create a re-usable, share-able data package defining which controls are satisfied by a system component. Perfect for innovators interested in automating compliance.
-              </td>
-              <td><a href=" https://zoom.us/meeting/register/3007eaaa114952fc8c34be5db4a05ad8">Register &raquo;</a></td>
-            </tr>
-            <tr>
-              <td class="date">Friday 9/15/17 11:00 AM EST</td>
-              <td>
-                <div>Introduction to Open Control and Compliance Masonry</div>
-                This webinar will introduce OpenControl, a data format for describing control implementation descriptions as re-usable, structured data. The first 20 minutes will demostrate OpenControl's and Compliance Masonry approach to automating cyber security compliance. The remaining 40 minutes will be a more technical walk through of creating Open Control content.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/15a94062d740d99066858a512be5123a">Register &raquo;</a></td>
-            </tr>
-            <tr>
-              <td class="date">Friday 9/22/17  11:00 AM EST</td>
-              <td>
-                <div>Automating Cyber Security Compliance 101</div>
-                A general introduction to automating cyber security compliance and Compliance as Code. Explanation of how Compliance as Code works and demonstrations of OpenControl, GovReady, and other technologies.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/d7b08fade132fadb66858a512be5123a">Register &raquo;</a></td>
-            </tr>
-            <tr>
-              <td class="date">Friday 9/29/17 11:00 AM</td>
-              <td>
-                <div>Building a GovReady Compliance App</div>
-                Learn how to create a re-usable, share-able data package defining which controls are satisfied by a system component. Perfect for innovators interested in automating compliance.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/3007eaaa114952fc8c34be5db4a05ad8">Register &raquo;</a></td>
-            </tr>
-
-            <tr>
-              <td class="date">Friday 10/06/17 11:00 AM EST</td>
-              <td>
-                <div>Introduction to Open Control and Compliance Masonry</div>
-                This webinar will introduce OpenControl, a data format for describing control implementation descriptions as re-usable, structured data. The first 20 minutes will demostrate OpenControl's and Compliance Masonry approach to automating cyber security compliance. The remaining 40 minutes will be a more technical walk through of creating Open Control content.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/15a94062d740d99066858a512be5123a">Register &raquo;</a></td>
-            </tr>
-            <tr>
-              <td class="date">Friday 10/13/17  11:00 AM EST</td>
-              <td>
-                <div>Automating Cyber Security Compliance 101</div>
-                A general introduction to automating cyber security compliance and Compliance as Code. Explanation of how Compliance as Code works and demonstrations of OpenControl, GovReady, and other technologies.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/d7b08fade132fadb66858a512be5123a">Register &raquo;</a></td>
-            </tr>
-            <tr>
-              <td class="date">Friday 10/20/17 11:00 AM</td>
-              <td>
-                <div>Building a GovReady Compliance App</div>
-                Learn how to create a re-usable, share-able data package defining which controls are satisfied by a system component. Perfect for innovators interested in automating compliance.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/3007eaaa114952fc8c34be5db4a05ad8">Register &raquo;</a></td>
-            </tr>
-
-            <tr>
-              <td class="date">Friday 10/27/17 11:00 AM EST</td>
-              <td>
-                <div>Introduction to Open Control and Compliance Masonry</div>
-                This webinar will introduce OpenControl, a data format for describing control implementation descriptions as re-usable, structured data. The first 20 minutes will demostrate OpenControl's and Compliance Masonry approach to automating cyber security compliance. The remaining 40 minutes will be a more technical walk through of creating Open Control content.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/15a94062d740d99066858a512be5123a">Register &raquo;</a></td>
-            </tr>
-            <tr>
-              <td class="date">Friday 11/03/17  11:00 AM EST</td>
-              <td>
-                <div>Automating Cyber Security Compliance 101</div>
-                A general introduction to automating cyber security compliance and Compliance as Code. Explanation of how Compliance as Code works and demonstrations of OpenControl, GovReady, and other technologies.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/d7b08fade132fadb66858a512be5123a">Register &raquo;</a></td>
-            </tr>
-            <tr>
-              <td class="date">Friday 11/10/17 11:00 AM</td>
-              <td>
-                <div>Building a GovReady Compliance App</div>
-                Learn how to create a re-usable, share-able data package defining which controls are satisfied by a system component. Perfect for innovators interested in automating compliance.
-              </td>
-              <td><a href="https://zoom.us/meeting/register/3007eaaa114952fc8c34be5db4a05ad8">Register &raquo;</a></td>
-            </tr>
-
-
-
-
-          </tbody>
-        </table>
-      </div>
     </div> <!-- /container -->
-
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
