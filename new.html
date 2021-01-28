@@ -23,14 +23,27 @@
 		.nav_bar { padding-top:2em; }
 		.hero-tag { color:#003D00; font-weight:bold; font-size:2em; margin-bottom:.8em; } 
 		.hero-copy { color:#5A7A5A; font-size:1.4em; display:block; margin-left:.5em; }
+		.hero-content { color:#5A7A5A; font-size:1.1em; display:block; margin-left:.5em; }
+		
+		
 		button.documentation { border:1px solid #009900; background-color:#E5F4E5;}	  
 		button.download {background-color:#B2E0B2;  border:1px solid #009900; color:#003D00;}	  
+		
+		.ribbon { font-size:.8em; }
+		
+		
 		.q-box { background-color:#f2f9f2; padding:2em 3em 1em 3em; border-radius:15px;}
-		.qlist-item { font-weight:thin; font-size:1.5em; color:#666666; }
-		.qlist-item-content { font-size:.8em; margin-bottom:1em; color:#666666; display:block; margin-left:3em; }
+		.qlist-item { font-weight:thin; font-size:1.5em; color:#003D00; }
+		
+		
+		.qlist-content { font-size:.8em; color:#666666; }
+		
 		.main { font-size:1.2em;} 
 		 .media { padding:0; border-top:0; margin:0 0 1em 0;}
 		 .media+.media { padding:0; border-top:0; margin:0 0 1em 0;}
+		 
+		 
+		 
 	</style>
 
 
@@ -73,8 +86,14 @@
 				<div style="padding:2em 1em 0 1em;">
 		<h2 class="is-size-3 hero-tag">Compliance is not Security</h2>
 		
-		<span class="hero-copy">GovReady-Q has developed and demonstrated a methodology for automation of compliance processes and documentation leveraging reusable content that greatly reduces the burden on security professionals.<br /><br />
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan odio sit amet auctor convallis. Etiam vitae faucibus metus. Nulla facilisi.</span><br /><br /><br />
+		<span class="hero-copy">
+			GovReady-Q has developed and demonstrated a methodology for automation of compliance processes and documentation leveraging reusable content that greatly reduces the burden on security professionals.</span><br />
+
+			<p class="hero-content">Based on the philosophy of Compliance-as-Code, GovReady-Q facilitates a compliance authorization process that is entirely machine readable and reusable. Control implementation statements, privacy information, control baselines, and POA&Ms can be imported and exported from GovReady-Q entirely in code.
+			
+			
+			
+		</p><br /><br /><br />
 		
 		
 <div class="columns">
@@ -112,13 +131,13 @@
 		<div class="columns">
 			<div class="column is-one-third has-text-centered">
 				
-				<div style="margin-left:auto; margin-right:auto; width:50%;">
+				<div style="margin-left:auto; margin-right:auto; width:70%;">
 				<figure class="is-78x78">
     				<img src="assets/img/icon-opensource.png">
 				</figure>
 				
 				<h4>Open Source</h4>
-				<p style="font-size:.8em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id rhoncus augue. Github</p>
+				<p class="ribbon">Software is free to use and customize. Fully transparent code base (<a href="https://github.com/GovReady/govready-q"">github</a>). No vendor lock-in.</p>
 			</div>
 			</div>
 			
@@ -126,25 +145,25 @@
 			
 			
 			<div class="column has-text-centered">
-				<div style="margin-left:auto; margin-right:auto; width:50%;">
+				<div style="margin-left:auto; margin-right:auto; width:70%;">
 				<figure class="is-78x78">
     				<img src="assets/img/icon-opencontrol.png">
 				</figure>
 				<h4>Open Control</h4>
-				<p style="font-size:.8em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id rhoncus augue. Github</p>
+				<p class="ribbon">Files are Version-controllable and easily updatable. Inherit data instead of copying and pasting.</p>
 				</div>
 			</div>
 			
 			
 			
 			<div class="column has-text-centered">
-				<div style="margin-left:auto; margin-right:auto; width:50%;">
+				<div style="margin-left:auto; margin-right:auto; width:70%;">
 				<figure class="is-78x78">
     				<img src="assets/img/icon-nist.png">
 				</figure>
 				
 				<h4>NIST OSCAL</h4>
-				<p style="font-size:.8em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id rhoncus augue. Github</p>
+				<p class="ribbon">Fully compatible with Open Security Controls Assessment Language.</p>
 				</div>
 			</div>
     
@@ -187,10 +206,10 @@
   </figure>
   <div class="media-content">
     <div class="content" style="padding:0 1em;">
-      <p>
+      
         <span class="qlist-item">Easy to use</span>
         <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		<p class="qlist-content">Easily navigable point and click interface for teams of all technical expertise. More advanced developer functions accessible through documentation.
       </p>
     </div>
   </div>
@@ -205,10 +224,10 @@
   </figure>
   <div class="media-content">
     <div class="content" style="padding:0 1em;">
-      <p>
+     
         <span class="qlist-item">Self-Service</span>
         <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		<p class="qlist-content">Web application guides users through the compliance process. Imputes and autofills information to reduce time to completion.
       </p>
     </div>
   </div>
@@ -223,10 +242,11 @@
   </figure>
   <div class="media-content">
     <div class="content" style="padding:0 1em;">
-      <p>
+   
         <span class="qlist-item">Collaborative</span>
         <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		<p class="qlist-content">Work through assessments as a team. Comment, assign, and notify team members throughout assessment.
+        
       </p>
     </div>
   </div>
@@ -241,10 +261,11 @@
   </figure>
   <div class="media-content">
     <div class="content" style="padding:0 1em;">
-      <p>
+     
         <span class="qlist-item">Customizable</span>
         <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		<p class="qlist-content">From applications to questionnaires to design, GovReady-Q is entirely extensible. Adjust to match your organization’s practices, processes, and style.
+        
       </p>
     </div>
   </div>
@@ -259,10 +280,10 @@
   </figure>
   <div class="media-content">
     <div class="content" style="padding:0 1em;">
-      <p>
+      
         <span class="qlist-item">Import/Export</span>
         <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       <p class="qlist-content"> Import components and control implementation statements via the OSCAL format. Export deliverables like Privacy Threshold Analysis (PTA) and System Security Plan (SSP).
       </p>
     </div>
   </div>
@@ -291,7 +312,7 @@
 </section>
 
 
-<section class="section" style="background:#F5F5F7; border-top:2px solid #CCCCCC; padding-top:1.5em;">
+<section class="section" style="background:#F5F5F7; border-top:2px solid #CCCCCC; padding-top:1.5em; border-bottom:1px solid #CCCCCC;">
     <div class="container">
 		<h3 class="is-size-3" style="color:#666666; font-weight:bold; padding-bottom:1em;">User-Friendly & Well Documented</h3> 
 	
@@ -356,7 +377,7 @@
 	
 		 			<div class="column">			
 		 			<h3 class="is-size-4 doc-sub">Training Manuals</h3>
-		 			 <p>To complement the Training Manuals, GovReady has recorded more than a dozen short Training Videos showing how to navigate and use the GovReady-Q application.</p>
+		 			 <p>GovReady has prepared a Training Manual and the CBP pilot project produced an additional DHS-specific Training Manual*. Both manuals include detailed info on GovReady’s functions.</p>
 		 			</div>
 		 		</div>	
 		 	</div>		
