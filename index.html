@@ -1,169 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GovReady® PBC</title>
+	
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 
-        <title>GovReady</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 
-        <meta property="og:title" content="GovReady" />
-
-        <meta name="description" content="">
-        <meta property="og:description" content="">
-
-        <link rel="icon" type="image/png" href="favicon.ico">
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Lato|PT+Sans:700');
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-                font-family: Lato, sans-serif;
-                font-size: 18px;
-            }
-            h1, h2, h3, h4, .cta {
-                font-family: 'PT Sans', sans-serif;
-                font-weight: bold;
-            }
-            #deck {
-                margin: 1em auto .5em auto;
-                font-size: 30px;
-                font-family: 'PT Sans', sans-serif;
-                font-weight: bold;
-                text-align: center;
-            }
-            #deck2 {
-                margin-bottom: 1em;
-                font-size: 20px;
-                font-family: 'PT Sans', sans-serif;
-                font-weight: bold;
-                text-align: center;
-            }
-            .cta { margin: 5px 0 30px 0;text-align: left; }
-
-            .img-responsive { margin: 40px 0px 0px 0px; border: none; }
-            .img-responsive-small { height:42px; width:216px; margin: auto; border: none; }
-
-            #team { font-size: 16px; }
-            #team .row { margin-bottom: 1em; }
-            #team h2 { margin: 1em 0; }
-            #team h3 { margin-top: 0; }
-            #team img { border: 1px solid #DDD; border-radius: 10px; }
-            #team .title { font-style: italic; }
-            footer { margin: 3em 0; font-size: 14px; color: #555; }
-
-            #qnav a { color: rgb(19,19,19); }
-        </style>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" integrity="sha256-VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0=" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="static/css/main.css">
-
-        <!--[if lt IE 9]>
-            <script src="static/js/html5-3.6-respond-1.1.0.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-
-    <!--[if lt IE 8]><p>Internet Explorer version 8 or any modern web browser is required to use this website, sorry.<![endif]-->
-    <!--[if gt IE 7]><!-->
+	<style>
+		.header-section { padding-top:1em; padding-bottom:1em; }
+		.title {font-family: 'Lato', sans-serif; font-size: 64px; }
+		p { font-family: 'Open+Sans', sans-serif; margin-bottom:1em; }
+		h2, h3, h5 { margin-bottom:1em; font-family: 'Lato', sans-serif;}
+		h2.tagline { margin:0;}
+	 	h3.doc-sub { margin:0 0 .7em 0; padding:0;}
+		h3.userfriendly { color:#666666; font-weight:bold; padding-bottom:1em; }
+			
+			  
+		.nav {  font-family: 'Lato'; font-size:.8em; padding-top:2em; }	  
+		.nav li { list-style-type:none; display:inline; padding-left:5em;  }	    
+		.tagline_box { }	  
+		.tagline { font-family: 'Lato light';  font-size:2.5em; color:#A5A5A5; }
+		.nav_bar { padding-top:2em; }
+		.hero-box { padding:1em 1em 0 1em; }
+		.hero-section { background:#E5F4E5; border-top:1px solid #009900; padding-top:1em; }
+		.hero-tag { color:#003D00; font-weight:bold; font-size:2em; margin-bottom:.8em; } 
+		.hero-copy { color:#5A7A5A; font-size:1.4em; display:block; margin-left:.5em; }
+		.hero-content { color:#5A7A5A; font-size:1.1em; display:block; margin-left:.5em; }
+		button.documentation { border:1px solid #009900; background-color:#E5F4E5; min-width:200px;}	  
+		button.download {background-color:#B2E0B2;  border:1px solid #009900; color:#003D00; min-width:200px;}	  
+		
+		.img-screen { padding:2em 2em 0 2em; }
+		
+		.ribbon { font-size:.8em; }
+		.ribbon-section { background:#F5F5F7; }
+		
+		.main-box { color:#666666; font-weight:bold; }
+		
+		.grq { width:90%; padding-bottom:1.5em; }
+		
+		.q-box { background-color:#f2f9f2; padding:2em 3em 1em 3em; border-radius:15px;}
+		h5.qlist-item { font-weight:400; font-size:1.4em; color:#003D00; margin-bottom:.7em; }
+		
+		.qlist-content { font-size:.9em; color:#5A7A5A; }
+		
+		.qlist-box { padding:0 1em; }
+		
+		.main { font-size:1.2em;} 
+		.media { padding:0; border-top:0; margin:0 0 1em 0;}
+		.media+.media { padding:0; border-top:0; margin:0 0 1em 0;}
+		
+		
+		.userfriendly-section { background:#F5F5F7; border-top:2px solid #CCCCCC; padding-top:1.5em; border-bottom:1px solid #CCCCCC; }
+		.userfriendly-box { padding:0 5em 2em 5em; }
+	</style>
 
 
-    <div class="container" style="width:900px;">
-      <div style="margin: 1em auto; max-width: 800px; text-align:center;">
-        <h1 class="sr-only">GovReady</h1>
-        <a href="/"><img src="img/govready_logo.png" class="img-responsive" alt="GovReady PBC Logo" style="height:80px; margin:auto;"></a>
-      </div>
+  </head>
+  <body>
+	<section class="section header-section">
+		<div class="container"> 
+		<div class="columns">
+			<div class="column is-one-quarter">
+				<figure class="image is-800x150">
+    				<img src="assets/img/govready-logo.png">
+				</figure>
+    		</div>
+		
+<div class="column">
+	<div class="is-hidden-mobile is-pulled-right">
+     <h2 class="tagline ">Compliance. Made&nbsp;easy.</h2>	
+	</div>
+</div>
+</div>
+</section>
 
-      <div id="qnav" style="text-align: center;">
-        <a href="/govready-q/download">Download GovReady</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/govready">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://govready-q.readthedocs.org">Documentation</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/news">News & Events</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <!-- <a href="/videos">Videos & Presentations</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
-        <a href="/events/webinars">Webinars</a>
-      </div>
+<!--
+	<section class="section">
+		<div class="columns">
+			<div class="column">
+			<span class="nav">
+				<ul><li>News & Events</li><li>About GovReady</li><li>Join the Mailing List</li></ul>
+			</span>
+			</div>
+		</div>
+	</section>
+-->
 
-      <!-- <p id="deck">Deliver cyber security compliance as fast as you ship code.</p> -->
-      <p id="deck">Turn Compliance into Code.</p>
+<section class="section hero-section">
+    <div class="container">
+		<div class="columns" >
+			<div class="column is-half">
+				<div class="hero-box">
+		<h2 class="is-size-3 hero-tag">Compliance is not security</h2>
+		<span class="hero-copy">GovReady-Q has developed and demonstrated a methodology for automation of compliance processes and documentation leveraging reusable content that greatly reduces the burden on security professionals.</span><br /><p class="hero-content">Based on the philosophy of Compliance-as-Code, GovReady-Q facilitates a compliance authorization process that is entirely machine readable and reusable. Control implementation statements, privacy information, control baselines, and POA&Ms can be imported and exported from GovReady-Q entirely in code.</p><br />
+		
+		
+<div class="columns">
+	<div class="column is-half has-text-centered">
+		<div class="control "><a href="https://govready-q.readthedocs.io/en/latest/"><button class="button documentation">Documentation</button></a></div>
+	</div> 
+		 
+	<div class="column has-text-centered">  
+		<div class="control"><a href="https://github.com/GovReady/govready-q"><button class="button download">Download</button></a></div>	
+	</div>
+</div>
 
-      <p id="deck2">Open Source &middot; OpenControl &middot; Compliance-as-Code &middot; DevSecOps </p>
+</div>
+</div>
 
-      <p>If you never want to write another System Security Plan or spend hours reading the NIST SP 800-53 again, get started with the <a href="https://github.com/GovReady/govready-q">GovReady-Q Compliance Server</a>, an open source project for techies who aren't FISMA experts.
-
-      </p>GovReady-Q Compliance Server simplifies and automates compliance for FISMA, the NIST Risk Management Framework, 800-53, and DFARS 800-171 (and more to come) with <a href="videos/demo/index.html">Compliance Apps</a> that map security controls to your technology stack, an <a href="https://github.com/GovReady/govready-q/blob/master/docs/Automation.md">Automation API</a> to update evidence and artifacts from live systems, and <a href="http://github.com/opencontrol">OpenControl repositories</a> that provide re-suable control implementation descriptions. <br><br>For more information on GovReady, download our Two Pager <a href="files/Two Pager Draft [October 25, 2019].pdf" download>here.</a>
-
-        <div class="row" style="border:0px solid blue;">
-          <div class="col-md-4" style="text-align:center;">
-            <img src="img/developer.png" style="height:400px;">
-            <p>
-              Dammit Jim,<br />
-              I'm a developer,<br />
-              not a FISMA expert.
-            </p>
-          </div>
-
-          <div class="col-md-2" style="">&nbsp;</div>
-
-          <div class="col-md-6" style="text-align:left;">
-
-            <br/>
-            <p class="cta">
-              <span class="glyphicon glyphicon-star"></span>
-              <a href="/jobs/developer">GovReady is Hiring!!</a>
-            </p>
-
-            <a href="videos/demo/index.html" xxx="display: block; margin: 40px 0px 0px 0px; border:1px solid red;">
-            <img class="img-responsive" src="videos/demo/thumbnail.png" alt="Watch a Demo Video">
-            </a>
-
-            <p class="cta">
-              <span class="glyphicon glyphicon-play"></span>
-              <a href="videos/demo">Watch a Demo Video &raquo;</a>
-            </p>
+<!-- start column two -->			
+			<div class="column">
+				<figure>
+					<img src="assets/img/screen.png" class="is-pulled-right is-hidden-mobile img-screen">
+				</figure>
+			</div>
+		</div>
+    </div>
+  </section>
 
 
-            <!--p class="cta">
-              <span class="glyphicon glyphicon-star"></span>
-              <a href="https://q.govready.com">Sign up and try GovReady-Q yourself! &raquo;</a>
-            </p-->
+<section class="section ribbon-section">
+    <div class="container">
+		<div class="columns">
+			<div class="column is-one-third has-text-centered">
+				
+				<div style="margin-left:auto; margin-right:auto; width:70%;">
+				<figure class="is-78x78">
+    				 <a href="https://github.com/GovReady/govready-q"><img src="assets/img/icon-opensource.png"></a>
+				</figure>
+				
+				<h4>Open Source</h4>
+				<p class="ribbon">Software is free to use and customize. Fully transparent code base. No vendor lock-in.</p>
+			</div>
+			</div>
+			
+			
+			
+			
+			<div class="column has-text-centered">
+				<div style="margin-left:auto; margin-right:auto; width:70%;">
+				<figure class="is-78x78">
+    				<a href="http://open-control.org/"><img src="assets/img/icon-opencontrol.png"></a>
+				</figure>
+				<h4>Open Control</h4>
+				<p class="ribbon">Files are Version-controllable and easily updatable. Inherit data instead of copying and pasting.</p>
+				</div>
+			</div>
+			
+			
+			
+			<div class="column has-text-centered">
+				<div style="margin-left:auto; margin-right:auto; width:70%;">
+				<figure class="is-78x78">
+    				<a href="https://pages.nist.gov/OSCAL/"><img src="assets/img/icon-nist.png"></a>
+				</figure>
+				
+				<h4>NIST OSCAL</h4>
+				<p class="ribbon">Fully compatible with <a href="https://pages.nist.gov/OSCAL/">Open Security Controls Assessment Language.</a></p>
+				</div>
+			</div>
+    
 
-            <p class="cta">
-              <span class="glyphicon glyphicon-star"></span>
-              <a href="talks/sccs2017/index.html">Slides from DHS 2017 Cyber Security Showcase &raquo;</a>
-            </p>
+</div>
 
-            <p class="cta">
-              <span class="glyphicon glyphicon-star"></span>
-              <a href="http://eepurl.com/cN7oJL">Join Mailing List &raquo;</a>
-            </p>
+</section>
 
-            <p class="cta">
-              <span class="glyphicon glyphicon-calendar"></span>
-              <a href="events/webinars/index.html">Learn with a GovReady Webinar &raquo;</a>
-            </p>
 
-        </div>
+<section class="section">
+    <div class="container">
+		<div class="columns is-variable is-1-mobile is-1-tablet is-8-desktop is-8-widescreen is-8-fullhd">
+			<div class="column is-three-fifths pr-6">
+				
+	<h3 class="is-size-3 main-box">Empower with Continuous Compliance</h3>
+ 	<p class="main">GovReady is the creation of data gurus with over 25 years of making government data accessible and comprehensible.</p>	 
+	<p class="main">Unlike existing GRC tools, GovReady’s design leverages automation and an improved user experience to make sense of muddled compliance activities and reduces vulnerabilities introduced by lengthy authorization processes.</p>	 
+	<p class="main">GovReady’s platform transforms clunky Excel and PDF forms into a sleek, online environment that connects with organizational data to complete assessments and compliance packages.</p>	 
+	<p class="main">GovReady’s platform democratizes compliance and security by collecting and reusing data from previous assessments, increasing the speed of authorization and reducing time needlessly replicating documentation. </p>	 
+	<p class="main">Built for organizational collaboration, GovReady breaks down barriers by allowing teams to work together on assessments and allow management offices to easily track assessment progress.</p>
 
-    </div> <!-- /container -->
+	 <figure class="is-hidden-mobile">
+	 <img src="assets/img/compliance-layers.png">
+	 </figure>
+	 
+</div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-        <script src="static/js/main.js"></script>
 
-        <script>
-        var ga_account_id = 'UA-XXXXX-X';
-        if (ga_account_id != 'UA-XXXXX-X') {
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create',ga_account_id);ga('send','pageview');
-        }
-        </script>
-    </body>
+<div class="column">
+<div class="q-box">
+	
+	<figure class="media-right is-hidden-mobile">
+	<img src="assets/img/govready-q.png" class="grq" >
+	</figure>
+	
+<article class="media">
+  <figure class="media-right">
+    <p class="image">
+      <img src="assets/img/check.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content qlist-box">
+      
+        <h5 class="qlist-item">Easy to use</h5>
+		<p class="qlist-content">Easily navigable point and click interface for teams of all technical expertise. More advanced developer functions accessible through documentation.
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<article class="media">
+  <figure class="media-right">
+    <p class="image">
+      <img src="assets/img/check.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content qlist-box">
+     
+        <h5 class="qlist-item">Self-Service</h5>
+		<p class="qlist-content">Web application guides users through the compliance process. Imputes and autofills information to reduce time to completion.
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<article class="media">
+  <figure class="media-right">
+    <p class="image">
+      <img src="assets/img/check.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content qlist-box">
+   
+        <h5 class="qlist-item">Collaborative</h5>
+		<p class="qlist-content">Work through assessments as a team. Comment, assign, and notify team members throughout assessment. Easily reviewable by authorizing officials and management for maximum accountability.
+        
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<article class="media">
+  <figure class="media-right">
+    <p class="image">
+      <img src="assets/img/check.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content qlist-box">
+     
+        <h5 class="qlist-item">Customizable</h5>
+		<p class="qlist-content">From applications to questionnaires to design, GovReady-Q is entirely extensible. Adjust to match your organization’s practices, processes, and style.
+        
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<article class="media">
+  <figure class="media-right">
+    <p class="image">
+      <img src="assets/img/check.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content qlist-box">
+      
+        <h5 class="qlist-item">Import/Export</h5>
+       <p class="qlist-content"> Import components and control implementation statements via the OSCAL format. Export deliverables like Privacy Threshold Analysis (PTA) and System Security Plan (SSP).
+      </p>
+    </div>
+  </div>
+</article>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="section userfriendly-section">
+    <div class="container">
+		<h3 class="is-size-3 userfriendly">User-Friendly & Well Documented</h3> 
+
+	 <div class="columns">
+		<div class="column is-half userfriendly-box">
+			 <div class="columns">
+				 <div class="column is-one-fifth">
+					 <figure class="is-80x80">
+						 <img src="assets/img/icon-readthedocs.png" class="is-pulled-right is-hidden-mobile">
+					 </figure>
+				 </div>
+	
+			<div class="column">			
+			<h3 class="is-size-4 doc-sub">Read the Docs</h3>
+			 <p>Read the Docs is a software documentation hosting platform where <a href="https://govready-q.readthedocs.io/en/latest/">GovReady publishes documentation</a> about the GovReady-Q product such as <a href="https://govready-q.readthedocs.io/en/latest/installation-and-setup/index.html">installation instructions</a> and System Requirements.</p>
+			</div>
+			</div>	
+		</div>		
+		
+		<div class="column userfriendly-box">
+			
+				 <div class="columns">
+					 <div class="column is-one-fifth">
+						 <figure class="is-80x80">
+							 <img src="assets/img/icon-videos.png"  class="is-pulled-right is-hidden-mobile">
+						 </figure>
+					 </div>
+	
+				<div class="column">			
+				<h3 class="is-size-4 doc-sub">Training Videos</h3>
+				 <p>To complement the Training Manuals, GovReady has recorded <a href="https://vimeo.com/user55895176">more than a dozen short Training Videos</a> showing how to navigate and use the GovReady-Q application.</p>
+				</div>
+			</div>
+		</div>	
+</div>
+<div class="columns">	
+		 		<div class="column is-half userfriendly-box">
+		 			 <div class="columns">
+		 				 <div class="column is-one-fifth">
+		 					 <figure class="is-80x80">
+		 						 <img src="assets/img/icon-training.png" class="is-pulled-right is-hidden-mobile">
+		 					 </figure>
+		 				 </div>
+	
+		 			<div class="column">			
+		 			<h3 class="is-size-4 doc-sub">Training Manuals</h3>
+		 			 <p>GovReady prepares custom Training Manuals for organizational deployments upon request. Contact us for support and training opportunities.</p>
+		 			</div>
+		 		</div>	
+		 	</div>		
+
+<div class="column userfriendly-box">
+	<div class="columns">
+		 <div class="column is-one-fifth">
+		 		 <figure class="is-80x80"><img src="assets/img/icon-videos.png"  class="is-pulled-right is-hidden-mobile"> </figure>
+		 </div>
+	
+		 				<div class="column">			
+		 				<h3 class="is-size-4 doc-sub">ATO Deliverable Docs</h3>
+		 				 <p>The list and descriptions of ATO Artifacts can be found <a href="https://docs.google.com/spreadsheets/d/1sckPYnA7gF23XCAguKfDsRFgTiCNesWyJd1AoVRlG_I/edit#gid=0">here</a>.</p>
+		 				</div>
+		 			</div>
+		 		</div>
+		 </div>	 
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Copyright GovReady &copy; 2021 | 
+	  
+	  <script type="text/javascript">
+	  var part1 = "info";
+	  var part2 = Math.pow(2,6);
+	  var part3 = String.fromCharCode(part2);
+	  var part4 = "govready.com"
+	  var part5 = part1 + String.fromCharCode(part2) + part4;
+	  document.write("<a href=" + "mai" + "lto" + ":" + part5 + ">Contact GovReady</a>");
+	  </script>
+	 
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+  </body>
 </html>
