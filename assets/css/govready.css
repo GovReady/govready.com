@@ -1,0 +1,55 @@
+		.header-section { padding-top:1em; padding-bottom:1em; }
+		.title {font-family: 'Lato', sans-serif; font-size: 64px; }
+		p { font-family: 'Open+Sans', sans-serif; margin-bottom:1em; }
+		h2, h3, h5 { margin-bottom:1em; font-family: 'Lato', sans-serif;}
+		h2.tagline { margin:0;}
+	 	h3.doc-sub { margin:0 0 .7em 0; padding:0;}
+		h3.userfriendly { color:#666666; font-weight:bold; padding-bottom:1em; }
+			
+			  
+		.nav {  font-family: 'Lato'; font-size:.8em; padding-top:2em; text-align:right;}	  
+		.nav li { list-style-type:none; display:inline; padding-left:5em;  }	  
+		
+		 a:active.greylink, a:visited.greylink, a:link.greylink { color: #999999; }
+		 a:hover.greylink { color: #009900; text-decoration: underline;} 
+		  
+		 a:active, a:visited, a:link { color: #009900;}
+		 a:hover { text-decoration:underline;} 
+		  
+		.tagline_box { }	  
+		.tagline { font-family: 'Lato light';  font-size:2.5em; color:#A5A5A5; }
+		.nav_bar { padding-top:2em; }
+		.hero-box { padding:1em 1em 0 1em; }
+		.hero-section { background:#E5F4E5; border-top:1px solid #009900; padding-top:1em; }
+		.hero-tag { color:#003D00; font-weight:bold; font-size:2em; margin-bottom:.8em; } 
+		.hero-copy { color:#5A7A5A; font-size:1.4em; display:block; margin-left:.5em; }
+		.hero-content { color:#5A7A5A; font-size:1.1em; display:block; margin-left:.5em; }
+		button.documentation { border:1px solid #009900; background-color:#E5F4E5; min-width:200px;}	  
+		button.download {background-color:#B2E0B2;  border:1px solid #009900; color:#003D00; min-width:200px;}	  
+		
+		.img-screen { padding:2em 2em 0 2em; }
+		
+		.ribbon { font-size:.8em; }
+		.ribbon-section { background:#F5F5F7; }
+		
+		.main-box { color:#666666; font-weight:bold; }
+		
+		.grq { width:90%; padding-bottom:1.5em; }
+		
+		.q-box { background-color:#f2f9f2; padding:2em 3em 1em 3em; border-radius:15px;}
+		h5.qlist-item { font-weight:400; font-size:1.4em; color:#003D00; margin-bottom:.7em; }
+		
+		.qlist-content { font-size:.9em; color:#5A7A5A; }
+		
+		.qlist-box { padding:0 1em; }
+		
+		.main { font-size:1.2em;} 
+		.media { padding:0; border-top:0; margin:0 0 1em 0;}
+		.media+.media { padding:0; border-top:0; margin:0 0 1em 0;}
+		
+		
+		.userfriendly-section { background:#F5F5F7; border-top:2px solid #CCCCCC; padding-top:1.5em; border-bottom:1px solid #CCCCCC; }
+		.userfriendly-box { padding:0 5em 2em 5em; }
+		
+		
+		.footer-white { background:#ffffff;}
