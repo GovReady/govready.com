@@ -45,8 +45,7 @@ import json
 
 # Default constants
 DIRECTORY = "/tmp/release"
-RELEASE_INFO = "https://api.github.com/repos/govready/govready-q/releases/latest"
-RELEASE_TAG_URL = "https://github.com/GovReady/govready-q/archive/refs/tags/"
+oRELEASE_TAG_URL = "https://github.com/GovReady/govready-q/archive/refs/tags/"
 SPACER = "\n====\n"
 
 # Gracefully exit on control-C
